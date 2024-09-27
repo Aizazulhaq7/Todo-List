@@ -49,7 +49,7 @@ const TodoList = () => {
             <input type="checkbox" onChange={() => toggleCompletion(todo.id)}/>
             {todo.value}
             <button className="delete-button" onClick={() => onDeleteClick(todo.id)}>Delete</button>
-          </div>// Display each todo in an <li>
+          </div>
         ))}
       </ul>
     </> 

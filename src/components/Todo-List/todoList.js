@@ -14,7 +14,7 @@ const TodoList = () => {
   const onSubmitClick = (e) => {
     e.preventDefault();
     if (inputValue.trim() === "") return;
-    setTodos([...todos, { id: uuid(), value: inputValue, isCompleted: false, isDeleted: false }]);
+    setTodos([...todos, { id: uuid(), value: inputValue, isCompleted: false}]);
     setInputValue("")
   };
 
